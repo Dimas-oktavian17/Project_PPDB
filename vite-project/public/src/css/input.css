@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* container */
+@layer components {
+  * {
+    @apply font-display;
+  }
+}
+/* container */
+@layer components {
+  .container {
+    @apply max-w-5xl mx-auto py-8;
+  }
+}
+/* Hamrbuger menu */
+@layer components {
+  .active > div > p:nth-child(1) {
+    @apply rotate-45 origin-bottom-left bg-primary dark:bg-primary2hover;
+  }
+}
+@layer components {
+  .active > div > p:nth-child(2) {
+    @apply scale-0;
+  }
+}
+@layer components {
+  .active > div > p:nth-child(3) {
+    @apply -rotate-[45deg] origin-top-left w-[30px] bg-primary dark:bg-primary2hover;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #000;
+}
+/* Dropdown active */
+@layer components {
+  .on {
+    @apply rotate-180 -mb-8 origin-top;
+  }
+}
+/* Dropdown active */
+@layer components {
+  .toglecard {
+    @apply bg-black;
+  }
+}
+/* utilities */
+@layer utilities {
+  .w-inherit {
+    width: inherit;
+  }
+  .h-inherit {
+    height: inherit;
+  }
+  .rounded-inherit {
+    border-radius: inherit;
+  }
+  .bg-major {
+    background-color: rgba (0, 0, 0, 0.8);
+  }
+}
