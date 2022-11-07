@@ -33,9 +33,15 @@ window.addEventListener("scroll", () => {
   }
 });
 // Toggle dark mode
-document.getElementById("default-toggle").addEventListener("click", () => {
-  document.documentElement.classList.toggle("dark");
-});
+let sun = document.getElementById("sun");
+let moon = document.getElementById("moon");
+document
+  .querySelector('[aria-label="toggle"]')
+  .addEventListener("click", function () {
+    document.documentElement.classList.toggle("dark");
+    moon.classList.toggle("hidden");
+    sun.classList.toggle("hidden");
+  });
 
 // Alur Pendaftaran section
 // select btn opsi preview
@@ -237,8 +243,18 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-// box btn ekstra toggle
-let btnEkstra = document.getElementById("a");
-btnEkstra.addEventListener("click", function () {
-  btnEkstra.classList.toggle("toglecard");
+
+// function klik dropdown
+let navdropdown = document.querySelector(".dropdownbtn");
+let navdropdownm = document.querySelector(".dropdownbtnm");
+let navdropdowne = document.querySelector(".dropdownbtne");
+let wrapperdropdown = document.getElementById("dropdown");
+navdropdown.addEventListener("click", () => {
+  wrapperdropdown.classList.toggle("hidden");
+});
+navdropdownm.addEventListener("click", () => {
+  wrapperdropdown.classList.toggle("hidden");
+});
+navdropdowne.addEventListener("click", () => {
+  wrapperdropdown.classList.toggle("hidden");
 });

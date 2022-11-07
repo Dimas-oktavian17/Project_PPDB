@@ -30,11 +30,6 @@
     @apply -rotate-[45deg] origin-top-left w-[30px] bg-primary dark:bg-primary2hover;
   }
 }
-
-.swiper-pagination-bullet-active {
-  opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: #000;
-}
 /* Dropdown active */
 @layer components {
   .on {

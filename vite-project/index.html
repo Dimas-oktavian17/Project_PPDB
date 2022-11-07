@@ -87,14 +87,18 @@
             </li>
             <!-- nav dropdowns -->
             <li class="hidden lg:block">
+
               <button id="dropdownDefault" data-dropdown-toggle="dropdown" type="button"
                 class="group link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
+
                 Alur Pendaftaran
                 <svg class="inline-block ml-2 w-4 h-4 " id="iconDropdown" aria-label="dropdown" aria-hidden="true"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
+
+
               <!-- Dropdown menu -->
               <div id="dropdown"
                 class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
@@ -102,21 +106,21 @@
                 style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 410px, 0px);">
                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                   <li>
-                    <a href="#alurpendaftaran"
-                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a href="#alurPendaftaran" id="btnalur"
+                      class="dropdownbtn block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Alur
                       Pendaftran
                     </a>
                   </li>
                   <li>
-                    <a href="#jurusan"
-                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a id="btnmajor" href="#major"
+                      class="dropdownbtnm block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Program Keahlian
                     </a>
                   </li>
                   <li>
-                    <a href="#ekstra"
-                      class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    <a id="btndrop" href="#ekstra"
+                      class="dropdownbtne block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Ekstrakurikuler
                     </a>
                   </li>
@@ -125,25 +129,25 @@
             </li>
             <!-- end dropdown -->
             <li class="lg:hidden">
-              <a href="#alurpendaftaran"
+              <a href="#alurPendaftaran"
                 class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                 Alur Pendaftaran
               </a>
             </li>
             <li class="lg:hidden">
-              <a href="#jurusan"
+              <a href="#major"
                 class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                 Program Keahlian
               </a>
             </li>
             <li class="lg:hidden">
-              <a href="#ekstrakurikuler"
+              <a href="#ekstra"
                 class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                 Ekstrakurikuler
               </a>
             </li>
             <li>
-              <a href="#contact"
+              <a href="#footer"
                 class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
                 Contact
               </a>
@@ -158,7 +162,7 @@
               </a>
             </li>
             <!-- Darkmode -->
-            <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
+            <!-- <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
               <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
               <div
                 class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
@@ -166,7 +170,20 @@
               <span class="ml-3 text-sm font-medium text-dark dark:text-primary2hover">
                 Dark-Mode
               </span>
-            </label>
+            </label> -->
+            <button aria-label="toggle" type="button"
+              class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-moon-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+              </svg>
+              <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="hidden bi bi-brightness-high" viewBox="0 0 16 16">
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+              </svg>
+            </button>
           </ul>
         </div>
         <!-- end navbar -->
@@ -208,7 +225,7 @@
                 </svg>
               </button>
             </a>
-            <a href="#faq">
+            <a href="#learn">
               <button type="button"
                 class="text-primary font-header text-lg font-semibold bg-primary2 hover:bg-primary2hover  rounded-lg px-5 py-2.5 mr-2 mb-2 dark:text-primary2 dark:bg-btnDark  dark:hover:bg-slate-800 dark:hover:opacity-40 ">
                 Learn More
@@ -225,7 +242,7 @@
         </div>
       </div>
       <!-- Sponsor fake:v -->
-      <div class="pt-[6.25rem]">
+      <div class="pt-[6.25rem] scroll-mt-24" id="learn">
 
         <div
           class="flex flex-col justify-center items-center bg-primarySponsor rounded-[15px] mx-8 gap-[10px] lg:p-[3.75rem] lg:order-2 lg:h-[9.688rem] lg:mx-16 dark:bg-transparent dark:shadow-lg">
@@ -246,7 +263,7 @@
         </div>
       </div>
       <!-- Major -->
-      <div class="flex flex-col justify-center items-center py-[6.25rem] px-0">
+      <div class="flex flex-col justify-center items-center py-[6.25rem] px-0" id="major">
         <!-- deskripsi -->
         <h1 class="font-normal text-[1.75rem] leading-[2.625rem] 
         text-center text-secondary dark:text-white">
@@ -341,7 +358,8 @@
       <!-- end major -->
       <!-- Alur Pendaftaran-->
       <div class="h-[15rem] block lg:h-[5rem]"></div>
-      <div class="pb-[6.25rem]  lg:flex lg:flex-row lg:justify-between lg:items-center scroll-mt-36" id="teknologi">
+      <div class="pb-[6.25rem]  lg:flex lg:flex-row lg:justify-between lg:items-center scroll-mt-36"
+        id="alurPendaftaran">
         <!-- mockup -->
         <div class="flex flex-col justify-start items-start w-full lg:w-1/2">
           <figure>
@@ -570,7 +588,7 @@
       </div>
       <!-- Ekstrakurikuler deskripsi -->
       <div class="py-[14.25rem] lg:py-[6.25rem]"></div>
-      <div class="flex flex-col justify-center items-center py-[6.25rem] scroll-mt-32" id="faq">
+      <div class="flex flex-col justify-center items-center py-[6.25rem] scroll-mt-32" id="ekstra">
         <!-- deskripsi -->
         <h2
           class="font-main font-normal text-[28px] leading-[42px] text-center text-secondary opacity-100 order-2 py-3 dark:text-white">
@@ -585,9 +603,10 @@
             <div class="flex flex-row justify-between swiper-wrapper max-w-xs md:max-w-sm lg:max-w-4xl xl:max-w-5xl">
               <!-- btn box -->
               <button id="a" aria-label="btnswiper" type="button"
-                class="swiper-slide rounded-xl bg-white dark:bg-btnDark transition-all cursor-pointer hover:bg-primary dark:hover:bg-gray-600 group">
+                class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
-                <div class="flex flex-col items-center justify-center py-8">
+                <div
+                  class="flex flex-col items-center justify-center py-8 group-hover:transition-all group-hover:duration-1000">
                   <!-- icon -->
                   <figure class="p-12 bg-[#eef2ff] " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
@@ -599,7 +618,7 @@
                     </svg>
                   </figure>
                   <!-- deskripsi -->
-                  <div class="text-center pt-4">
+                  <div class="text-center pt-4 group-hover:transition-all">
                     <h1 class="font-bold  text-xl   text-black group-hover:text-white dark:text-white">Desain Grafis
                     </h1>
                     <p class="font-normal text-base text-black group-hover:text-white dark:text-white">Lorem ipsum</p>
@@ -608,11 +627,13 @@
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button type="button" class="swiper-slide bg-white rounded-xl active:bg-black">
+              <button id="a" aria-label="btnswiper" type="button"
+                class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
-                <div class="flex flex-col items-center justify-center py-8">
+                <div
+                  class="flex flex-col items-center justify-center py-8 group-hover:transition-all group-hover:duration-1000">
                   <!-- icon -->
-                  <figure class="p-12 bg-red-400    " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
+                  <figure class="p-12 bg-[#eef2ff] " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                       class="bi bi-palette" viewBox="0 0 16 16">
                       <path
@@ -622,19 +643,22 @@
                     </svg>
                   </figure>
                   <!-- deskripsi -->
-                  <div class="text-center pt-4">
-                    <h1 class="font-bold  text-xl   text-black">Desain Grafis</h1>
-                    <p class="font-normal text-base text-black">Lorem ipsum</p>
+                  <div class="text-center pt-4 group-hover:transition-all">
+                    <h1 class="font-bold  text-xl   text-black group-hover:text-white dark:text-white">Desain Grafis
+                    </h1>
+                    <p class="font-normal text-base text-black group-hover:text-white dark:text-white">Lorem ipsum</p>
                   </div>
                 </div>
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button type="button" class="swiper-slide bg-white rounded-xl">
+              <button id="a" aria-label="btnswiper" type="button"
+                class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
-                <div class="flex flex-col items-center justify-center py-8">
+                <div
+                  class="flex flex-col items-center justify-center py-8 group-hover:transition-all group-hover:duration-1000">
                   <!-- icon -->
-                  <figure class="p-12 bg-red-400    " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
+                  <figure class="p-12 bg-[#eef2ff] " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                       class="bi bi-palette" viewBox="0 0 16 16">
                       <path
@@ -644,19 +668,22 @@
                     </svg>
                   </figure>
                   <!-- deskripsi -->
-                  <div class="text-center pt-4">
-                    <h1 class="font-bold  text-xl   text-black">Desain Grafis</h1>
-                    <p class="font-normal text-base text-black">Lorem ipsum</p>
+                  <div class="text-center pt-4 group-hover:transition-all">
+                    <h1 class="font-bold  text-xl   text-black group-hover:text-white dark:text-white">Desain Grafis
+                    </h1>
+                    <p class="font-normal text-base text-black group-hover:text-white dark:text-white">Lorem ipsum</p>
                   </div>
                 </div>
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button type="button" class="swiper-slide bg-white rounded-xl">
+              <button id="a" aria-label="btnswiper" type="button"
+                class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
-                <div class="flex flex-col items-center justify-center py-8">
+                <div
+                  class="flex flex-col items-center justify-center py-8 group-hover:transition-all group-hover:duration-1000">
                   <!-- icon -->
-                  <figure class="p-12 bg-red-400    " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
+                  <figure class="p-12 bg-[#eef2ff] " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                       class="bi bi-palette" viewBox="0 0 16 16">
                       <path
@@ -666,19 +693,22 @@
                     </svg>
                   </figure>
                   <!-- deskripsi -->
-                  <div class="text-center pt-4">
-                    <h1 class="font-bold  text-xl   text-black">Desain Grafis</h1>
-                    <p class="font-normal text-base text-black">Lorem ipsum</p>
+                  <div class="text-center pt-4 group-hover:transition-all">
+                    <h1 class="font-bold  text-xl   text-black group-hover:text-white dark:text-white">Desain Grafis
+                    </h1>
+                    <p class="font-normal text-base text-black group-hover:text-white dark:text-white">Lorem ipsum</p>
                   </div>
                 </div>
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button type="button" class="swiper-slide bg-white rounded-xl">
+              <button id="a" aria-label="btnswiper" type="button"
+                class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
-                <div class="flex flex-col items-center justify-center py-8">
+                <div
+                  class="flex flex-col items-center justify-center py-8 group-hover:transition-all group-hover:duration-1000">
                   <!-- icon -->
-                  <figure class="p-12 bg-red-400    " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
+                  <figure class="p-12 bg-[#eef2ff] " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                       class="bi bi-palette" viewBox="0 0 16 16">
                       <path
@@ -688,19 +718,22 @@
                     </svg>
                   </figure>
                   <!-- deskripsi -->
-                  <div class="text-center pt-4">
-                    <h1 class="font-bold  text-xl   text-black">Desain Grafis</h1>
-                    <p class="font-normal text-base text-black">Lorem ipsum</p>
+                  <div class="text-center pt-4 group-hover:transition-all">
+                    <h1 class="font-bold  text-xl   text-black group-hover:text-white dark:text-white">Desain Grafis
+                    </h1>
+                    <p class="font-normal text-base text-black group-hover:text-white dark:text-white">Lorem ipsum</p>
                   </div>
                 </div>
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button type="button" class="swiper-slide bg-white rounded-xl">
+              <button id="a" aria-label="btnswiper" type="button"
+                class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
-                <div class="flex flex-col items-center justify-center py-8">
+                <div
+                  class="flex flex-col items-center justify-center py-8 group-hover:transition-all group-hover:duration-1000">
                   <!-- icon -->
-                  <figure class="p-12 bg-red-400    " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
+                  <figure class="p-12 bg-[#eef2ff] " style="border-radius: 99% 1% 68% 32% / 63% 0% 100% 37% ;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                       class="bi bi-palette" viewBox="0 0 16 16">
                       <path
@@ -710,9 +743,10 @@
                     </svg>
                   </figure>
                   <!-- deskripsi -->
-                  <div class="text-center pt-4">
-                    <h1 class="font-bold  text-xl   text-black">Desain Grafis</h1>
-                    <p class="font-normal text-base text-black">Lorem ipsum</p>
+                  <div class="text-center pt-4 group-hover:transition-all">
+                    <h1 class="font-bold  text-xl   text-black group-hover:text-white dark:text-white">Desain Grafis
+                    </h1>
+                    <p class="font-normal text-base text-black group-hover:text-white dark:text-white">Lorem ipsum</p>
                   </div>
                 </div>
               </button>
@@ -777,6 +811,9 @@
                             dark:text-white">
               Akutansi
             </h1>
+            <p class="font-header font-normal text-base text-secondary opacity-60 dark:text-primary2">
+              LESTY KEJORA
+            </p>
           </div>
           <!-- end card one -->
           <!-- card two -->
@@ -790,6 +827,9 @@
                   dark:text-white">
               Rekayasa Perangkat Lunak
             </h1>
+            <p class="font-header font-normal text-base text-secondary opacity-60 dark:text-primary2">
+              RIZKY BILLAR
+            </p>
           </div>
           <!-- end card two -->
           <!-- card three -->
@@ -803,74 +843,100 @@
                   dark:text-white">
               Otomatisasi Perkantoran
             </h1>
+            <p class="font-header font-normal text-base text-secondary opacity-60 dark:text-primary2">
+              SUBUR ANJAR KASIH
+            </p>
           </div>
           <!-- end card three -->
         </div>
       </div>
       <!-- end mentor profil -->
-      <!-- ekspresi (ungkapan perasaan) -->
+      <!-- Gallery -->
       <div class="flex flex-col justify-center items-center py-[6.25rem] gap-[10px]">
-        <div
-          class="flex flex-col items-center
-                       gap-[30px] bg-primary shadow-md shadow-donwlod rounded-[20px] dark:shadow-slate-700 dark:bg-slate-700  lg:items-start lg:w-[1024px lg:h-[538px] ">
-          <div class="flex flex-col items-center gap-[30px] lg:flex-row lg:items-start">
-            <!-- deskripsi -->
-            <div class="flex flex-col justify-center items-start py-[100px] px-[80px] w-full lg:w-1/2">
-              <h1 class="font-header font-semibold text-base tracking-widest text-white order-1">
-                Expression
-              </h1>
-              <h2 class="font-main font-normal text-[28px] leading-10 text-white order-2">
-                Jadi apakah Lisa mau menjalin hubungan dengan Dimas?
-              </h2>
-              <div class="h-[10px] order-3"></div>
-              <h3 class="font-header font-normal text-base text-white opacity-60 order-4">
-                Apapun keputusan Lisa akan Dimas terima dengan baik.
-              </h3>
-              <div class="h-[5px] order-5"></div>
-              <div class="h-[40px] order-6"></div>
-              <!-- btn -->
-              <div class="flex flex-row items-start gap-[15px] order-7 lg:w-[315px] lg:h-[46px]">
-                <a href="https://api.whatsapp.com/send?phone=628978378911&text=`Love you, ayang gantengg`"
-                  target="_blank"
-                  class="rounded-md py-2 px-4 bg-primary2
-                                   text-dark font-header font-semibold transition-all hover:bg-primary2hover dark:text-slate-900 ">
-                  Terima !
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=628978378911&text=Maaf kamu terlau baik untuk aku:)"
-                  target="_blank"
-                  class="rounded-md py-2 px-4 bg-primary2
-                                   text-dark font-header font-semibold transition-all hover:bg-primary2hover dark:text-slate-900 ">
-                  Tolak !
-                </a>
+        <!-- deskripsi -->
+        <h2
+          class="font-main font-normal text-[28px] leading-[42px] text-center text-secondary opacity-100 py-3 dark:text-white">
+          Gallery Image
+        </h2>
+        <!-- swipper -->
+        <div class="py-8 swiper mySwiper">
+          <div class="flex flex-row justify-between swiper-wrapper max-w-xs md:max-w-sm lg:max-w-4xl xl:max-w-5xl">
+            <!-- btn box -->
+            <div class="swiper-slide flex flex-wrap w-1/3">
+              <!-- wrapper -->
+              <div class="w-full p-1 md:p-2">
+                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
               </div>
             </div>
-            <!-- mockup -->
-            <div class="flex flex-row justify-center items-center gap-[10px] w-full lg:w-1/2">
-              <img src="./asset/mockup/Group 26 (2).svg" class="rounded-md lg:rounded-none" alt="mockup">
+            <!-- end box -->
+            <!-- btn box -->
+            <div class="swiper-slide flex flex-wrap w-1/3">
+              <!-- wrapper -->
+              <div class="w-full p-1 md:p-2">
+                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+              </div>
             </div>
+            <!-- end box -->
+            <!-- btn box -->
+            <div class="swiper-slide flex flex-wrap w-1/3">
+              <!-- wrapper -->
+              <div class="w-full p-1 md:p-2">
+                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+              </div>
+            </div>
+            <!-- end box -->
+            <!-- btn box -->
+            <div class="swiper-slide flex flex-wrap w-1/3">
+              <!-- wrapper -->
+              <div class="w-full p-1 md:p-2">
+                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+              </div>
+            </div>
+            <!-- end box -->
+            <!-- btn box -->
+            <div class="swiper-slide flex flex-wrap w-1/3">
+              <!-- wrapper -->
+              <div class="w-full p-1 md:p-2">
+                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+              </div>
+            </div>
+            <!-- end box -->
+            <!-- btn box -->
+            <div class="swiper-slide flex flex-wrap w-1/3">
+              <!-- wrapper -->
+              <div class="w-full p-1 md:p-2">
+                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="./public/assets/gallery-img/guru-img/guru1.jpg">
+              </div>
+            </div>
+            <!-- end box -->
           </div>
+          <div class="swiper-pagination pt-10"></div>
         </div>
+        <!-- end swipper end -->
+        <!-- images -->
+
+        <!-- end images -->
       </div>
+      <!-- end Gallery -->
       <!-- footer section -->
       <div class="flex flex-col items-start p-20 gap-[30px] bg-footer rounded-tl-3xl rounded-tr-3xl dark:bg-slate-800">
         <div class="flex flex-col items-start gap-[30px] lg:flex-row">
           <div class="flex flex-col items-start gap-5 lg:w-[27rem] lg:gap-2">
             <div class="flex flex-row items-center gap-[10px]">
-              <svg class="h-10 mr-3 fill-primary dark:fill-primary2" width="51" height="70"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path
-                  d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
-              </svg>
-
+              <img width="51" height="40" src="./public/assets/logo/kawung-logo.avif" alt="">
               <h1 class="font-main font-semibold text-base text-black order-1 dark:text-white">
-                Expression
+                SMK Kawung 1 Surabaya
               </h1>
             </div>
             <p class="font-header font-normal text-base text-accordion order-1 dark:text-white">
-              Sebenernya banyak banget aplikasi chatting yang lebih bagus dari ini, maka dari itu
-              lebih baik pake yang lain aja deh
-              ya daripada pake aplikasi yang ini.
+              SMK Kawung 1 Surabaya merupakan sekolah dengan nilai yang rendah, dan kualitas sdm pengajar yang buruk.
+              Di SMK kawung 1 Surabaya anda dapat mendapatkan relasi & teman" yang ngga bergunaz`
             </p>
             <p class="font-header font-semibold text-sm tracking-widest text-accordion order-2 dark:text-white">
               COPYRIGHT (C) 2021. DESIGN BY NAUVAL
@@ -906,7 +972,7 @@
               Tetep Terhubung
             </h1>
             <p class="font-header font-normal text-base text-accordion order-1 self-stretch dark:text-white">
-              Lihat kami pansos di sosial media berikut:
+              Lihat kami di sosial media berikut:
             </p>
             <div class="flex flex-row justify-center items-center gap-[10px] order-2">
               <div
@@ -969,6 +1035,7 @@
           </div>
         </div>
       </div>
+      <!-- end footer -->
     </div>
   </main>
   <!-- end main -->
