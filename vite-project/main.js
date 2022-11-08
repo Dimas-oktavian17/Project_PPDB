@@ -1,10 +1,10 @@
 // For Css File
 import "./public/src/css/style.css";
-import "./public/src/css/animate.css";
-import "./public/src/css/style.css";
-import "./public/src/css/swiper-bundle.min.css";
+// import "./public/src/css/animate.css";
+// import "./public/src/css/style.css";
+// import "./public/src/css/swiper-bundle.min.css";
 // For JS File
-import "./public/src/js/swiper-bundle.min.js";
+// import "./public/src/js/swiper-bundle.min.js";
 
 // svg active dropdown
 const icondropdown = document.querySelector('[aria-label="dropdown"]');
