@@ -13,6 +13,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="./public/src/css/animate.css">
   <link rel="stylesheet" href="./public/src/css/swiper-bundle.min.css">
+  <script src="./public/src/js/swiper-bundle.min.js" defer></script>
   <!-- end -->
   <!-- Font-Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +39,7 @@
           <div class="relative mr-3 md:mr-0 hidden md:block">
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             </div>
-            <a href="#daftar">
+            <a href="./form.html">
               <button type="button" onclick="onLogout()"
                 class="font-header text-white font-semibold text-lg shadow-sm shadow-primary bg-primary hover:bg-blue-600 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:text-dark dark:bg-slate-200 dark:hover:bg-slate-300  dark:shadow-slate-200">
                 Daftar
@@ -154,7 +155,7 @@
             </li>
             <br>
             <li class="lg:hidden">
-              <a href="#daftar">
+              <a href="./form.html">
                 <button type="button" onclick="onLogout()"
                   class="w-full font-header text-white font-semibold text-lg shadow-sm shadow-primary bg-primary hover:bg-blue-600 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:text-dark dark:bg-slate-200 dark:hover:bg-slate-300  dark:shadow dark:shadow-slate-200">
                   Daftar
@@ -209,7 +210,7 @@
             pendaftaran
           </p>
           <div class=" flex flex-row">
-            <a href="#fitur">
+            <a href="./form.html">
               <button type="button"
                 class="group text-secondary2 font-header text-lg font-semibold bg-primary hover:bg-blue-600 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:text-dark dark:bg-slate-200 dark:hover:bg-slate-300  ">
                 Get Started
@@ -925,8 +926,9 @@
       </div>
       <!-- end Gallery -->
       <!-- footer section -->
-      <div class="flex flex-col items-start p-20 gap-[30px] bg-footer rounded-tl-3xl rounded-tr-3xl dark:bg-slate-800">
-        <div class="flex flex-col items-start gap-[30px] lg:flex-row">
+      <div class="flex flex-col items-start p-20 gap-[30px] bg-footer rounded-tl-3xl rounded-tr-3xl dark:bg-slate-800"
+        id="footer">
+        <div class="flex flex-col items-start gap-[30px] lg:gap-[20px] lg:flex-row">
           <div class="flex flex-col items-start gap-5 lg:w-[27rem] lg:gap-2">
             <div class="flex flex-row items-center gap-[10px]">
               <img width="51" height="40" src="./public/assets/logo/kawung-logo.avif" alt="">
@@ -953,16 +955,16 @@
                   <a href="#beranda">Beranda</a>
                 </li>
                 <li class="font-header font-normal text-base text-accordion dark:text-white">
-                  <a href="#fitur">Fitur-fitur</a>
+                  <a href="#major">Program Keahlian</a>
                 </li>
                 <li class="font-header font-normal text-base text-accordion dark:text-white">
-                  <a href="#teknologi">Teknologi</a>
+                  <a href="#alurPendaftaran">Alur Pendaftaran</a>
                 </li>
                 <li class="font-header font-normal text-base text-accordion dark:text-white">
-                  <a href="#about">About</a>
+                  <a href="#ekstra">Ekstrakurikuler</a>
                 </li>
                 <li class="font-header font-normal text-base text-accordion dark:text-white">
-                  <a href="#faq">FAQ</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -1040,10 +1042,10 @@
   </main>
   <!-- end main -->
   <!-- Javacript module & libray -->
-  <script src="./node_modules/flowbite/dist/flowbite.js" type="text/javascript"></script>
+  <script src="./node_modules/flowbite/dist/flowbite.js" type="module"></script>
   <script type="module" src="/main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./public/src/js/swiper-bundle.min.js"></script>
+  <!-- ` -->
   <!-- End -->
 </body>
 
