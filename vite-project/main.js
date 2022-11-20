@@ -1,5 +1,6 @@
 // For Css File
 import "./public/src/css/style.css";
+import "flowbite";
 // import "./public/src/css/animate.css";
 // import "./public/src/css/style.css";
 // import "./public/src/css/swiper-bundle.min.css";

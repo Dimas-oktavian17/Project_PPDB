@@ -7,13 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
   <!-- Tailwind CSS -->
-  <link rel="stylesheet" href="./public/src/css/style.css" />
+  <link rel="stylesheet" href="public/src/css/style.css" />
   <!-- end -->
   <!-- Libray -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="./public/src/css/animate.css">
   <link rel="stylesheet" href="./public/src/css/swiper-bundle.min.css">
-  <script src="./public/src/js/swiper-bundle.min.js" defer></script>
   <!-- end -->
   <!-- Font-Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,8 +97,6 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
-
-
               <!-- Dropdown menu -->
               <div id="dropdown"
                 class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
@@ -937,8 +934,8 @@
               </h1>
             </div>
             <p class="font-header font-normal text-base text-accordion order-1 dark:text-white">
-              SMK Kawung 1 Surabaya merupakan sekolah dengan nilai yang rendah, dan kualitas sdm pengajar yang buruk.
-              Di SMK kawung 1 Surabaya anda dapat mendapatkan relasi & teman" yang ngga bergunaz`
+              SMK Kawung 1 Surabaya merupakan sekolah dengan nilai yang tinggi, dan kualitas sdm pengajar yang baik.
+              Di SMK kawung 1 Surabaya anda dapat mendapatkan relasi & teman" berguna
             </p>
             <p class="font-header font-semibold text-sm tracking-widest text-accordion order-2 dark:text-white">
               COPYRIGHT (C) 2021. DESIGN BY NAUVAL
@@ -1043,9 +1040,12 @@
   <!-- end main -->
   <!-- Javacript module & libray -->
   <script src="./node_modules/flowbite/dist/flowbite.js" type="module"></script>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- ` -->
+  <script src="./public/src/js/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- End -->
 </body>
 
