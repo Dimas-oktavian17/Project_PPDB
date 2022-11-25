@@ -61,19 +61,37 @@ let formA = document.getElementById("formA");
 let formB = document.getElementById("formB");
 let formC = document.getElementById("formC");
 // pagination
-let fpgBefore = document.getElementById("formBefore");
-let fpgAfter = document.getElementById("formAfter");
+let paginationOne = document.querySelector('[aria-label="paginationOne"]');
+let paginationTwo = document.querySelector('[aria-label="paginationTwo"]');
+let paginationThree = document.querySelector('[aria-label="paginationThree"]');
 // pagination
-fpgAfter.addEventListener("click", () => {
-  // form
-  formA.classList.add("hidden");
-  formB.classList.remove("hidden");
-  formC.classList.remove("hidden");
-});
-fpgBefore.addEventListener("click", () => {
-  // form
-  formA.classList.remove("hidden");
-  formB.classList.add("hidden");
-  formB.classList.remove("hidden");
-  formC.classList.add("hidden");
+// paginationOne.addEventListener("click", () => {
+//   formA.classList.remove("hidden");
+//   formB.classList.add("hidden");
+//   formC.classList.add("hidden");
+// });
+// // pagination two
+// paginationTwo.addEventListener("click", () => {
+//   formA.classList.add("hidden");
+//   formB.classList.remove("hidden");
+//   formC.classList.add("hidden");
+// });
+// // pagination three
+// paginationThree.addEventListener("click", () => {
+//   formA.classList.add("hidden");
+//   formB.classList.add("hidden");
+//   formC.classList.remove("hidden");
+// });
+//  Initialize Swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
