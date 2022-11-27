@@ -66,17 +66,20 @@ boxThree.textContent = 3;
 let titleOne = document.querySelector('[aria-label="titleOne"]');
 let titleTwo = document.querySelector('[aria-label="titleTwo"]');
 let titleThree = document.querySelector('[aria-label="titleThree"]');
-titleOne.textContent = "Langkah Kedua";
-titleTwo.textContent = "Langkah Ketiga";
-titleThree.textContent = "Langkah Keempat";
+titleOne.textContent = "Langkah Pertama";
+titleTwo.textContent = "Langkah Kedua";
+titleThree.textContent = "Langkah Ketiga";
 // end title langkah pendaftaran
 // select deskripsi pendaftaran
 let deskripsiOne = document.querySelector('[aria-label="deskripsiOne"]');
 let deskripsiTwo = document.querySelector('[aria-label="deskripsiTwo"]');
 let deskripsiThree = document.querySelector('[aria-label="deskripsiThree"]');
-deskripsiOne.textContent = "Lorem ipsum dolor sit amet conscectur blabla";
-deskripsiTwo.textContent = "Lorem ipsum dolor sit amet conscectur blabla";
-deskripsiThree.textContent = "Lorem ipsum dolor sit amet conscectur blabla";
+deskripsiOne.textContent =
+  "Calon peserta didik melakukan registrasi online melalui laman ppdb.smkkawung.com";
+deskripsiTwo.textContent =
+  "Calon peserta didik datang ke SMK kawung 1, untuk menyerahkan berkas & data diri";
+deskripsiThree.textContent =
+  "Calon peserta didik melakukan pembayaran ke ruang tata usaha";
 // end deskripsi pendaftaran
 let boxOnebf = 1;
 let boxTwobf = 2;
@@ -87,10 +90,18 @@ let titleOnebf = "Langkah Pertama";
 let titleTwobf = "Langkah Kedua";
 let titleThreebf = "Langkah Ketiga";
 // end title langkah pendaftaran
-// select deskripsi pendaftaran
-let deskripsiOnebf = "Lorem ipsum dolor sit amet conscectur blabla";
-let deskripsiTwobf = "Lorem ipsum dolor sit amet conscectur blabla";
-let deskripsiThreebf = "Lorem ipsum dolor sit amet conscectur blabla";
+// select deskripsi pendaftaran offline & online
+let deskripsiOnebf =
+  "Calon peserta didik melakukan registrasi online melalui laman ppdb.smkkawung.com";
+let deskripsiTwobf =
+  "Calon peserta didik datang ke SMK kawung 1, untuk menyerahkan berkas & data diri";
+let deskripsiThreebf =
+  "Calon peserta didik melakukan pembayaran ke ruang tata usaha";
+// deskripsi offline
+let deskripsiOnebfof =
+  "Calon peserta didik datang ke SMK Kawung 1 untuk melakukan pengisian data diri";
+let deskripsiTwobfof =
+  "Calon peserta didik mengisi formulir data diri yang telah diberikan";
 // pagination
 let paginationBefore = document.querySelector(
   '[aria-label="paginationBefore"]'
@@ -110,13 +121,12 @@ let titleSix = "Langkah Keenam";
 // end title
 // deskripsi pendaftaran
 let deskripsiFour =
-  "Fusce faucibus ex vitae condimentum vehicula. Sed sed lectus sed urna interdum sodales.";
+  "Calon peserta didik datang ke SMK Kawung untuk melakukan pengambilan seragam.";
 let deskripsiFive =
-  "Fusce faucibus ex vitae condimentum vehicula. Sed sed lectus sed urna interdum sodales.";
-let deskripsiSix =
-  "Fusce faucibus ex vitae condimentum vehicula. Sed sed lectus sed urna interdum sodales. ";
+  "Setelah menyelesaikan proses adminstrasi, peserta didik akan melakukan proses adminstrasi.";
+let deskripsiSix = "Peserta didik akan mengikuti prosedur belajar lebih lanjut";
 // click funtion for alur pendaftaran section
-// pagination for online pendaftaran
+// pagination for  online pendaftaran
 // after pagination
 paginationAfter.addEventListener("click", () => {
   // box number
@@ -139,30 +149,6 @@ paginationAfter.addEventListener("click", () => {
     deskripsiTwo.textContent,
     deskripsiThree.textContent,
   ] = [deskripsiFour, deskripsiFive, deskripsiSix];
-  // end deskripsi pendaftaran
-});
-// before pagination
-paginationBefore.addEventListener("click", () => {
-  // box number
-  [boxOne.textContent, boxTwo.textContent, boxThree.textContent] = [
-    boxOnebf,
-    boxTwobf,
-    boxThreebf,
-  ];
-  // end box number
-  // title pendaftaran
-  [titleOne.textContent, titleTwo.textContent, titleThree.textContent] = [
-    titleOnebf,
-    titleTwobf,
-    titleThreebf,
-  ];
-  // end title pendaftaran
-  // deskripsi pendaftaran
-  [
-    deskripsiOne.textContent,
-    deskripsiTwo.textContent,
-    deskripsiThree.textContent,
-  ] = [deskripsiOnebf, deskripsiTwobf, deskripsiThreebf];
   // end deskripsi pendaftaran
 });
 // btn offline
@@ -188,8 +174,32 @@ btnOffline.addEventListener("click", () => {
     deskripsiOne.textContent,
     deskripsiTwo.textContent,
     deskripsiThree.textContent,
-  ] = [deskripsiOnebf, deskripsiTwobf, deskripsiThreebf];
+  ] = [deskripsiOnebfof, deskripsiTwobfof, deskripsiThreebf];
   // end deskripsi pendaftaran
+  // pagination before for offline registration
+  paginationBefore.addEventListener("click", () => {
+    // box number
+    [boxOne.textContent, boxTwo.textContent, boxThree.textContent] = [
+      boxOnebf,
+      boxTwobf,
+      boxThreebf,
+    ];
+    // end box number
+    // title pendaftaran
+    [titleOne.textContent, titleTwo.textContent, titleThree.textContent] = [
+      titleOnebf,
+      titleTwobf,
+      titleThreebf,
+    ];
+    // end title pendaftaran
+    // deskripsi pendaftaran
+    [
+      deskripsiOne.textContent,
+      deskripsiTwo.textContent,
+      deskripsiThree.textContent,
+    ] = [deskripsiOnebfof, deskripsiTwobfof, deskripsiThreebf];
+    // end deskripsi pendaftaran
+  });
 });
 // btn online
 btnOnline.addEventListener("click", () => {
@@ -216,6 +226,31 @@ btnOnline.addEventListener("click", () => {
     deskripsiThree.textContent,
   ] = [deskripsiOnebf, deskripsiTwobf, deskripsiThreebf];
   // end deskripsi pendaftaran
+  // pagination before for online registration
+  // before pagination
+  paginationBefore.addEventListener("click", () => {
+    // box number
+    [boxOne.textContent, boxTwo.textContent, boxThree.textContent] = [
+      boxOnebf,
+      boxTwobf,
+      boxThreebf,
+    ];
+    // end box number
+    // title pendaftaran
+    [titleOne.textContent, titleTwo.textContent, titleThree.textContent] = [
+      titleOnebf,
+      titleTwobf,
+      titleThreebf,
+    ];
+    // end title pendaftaran
+    // deskripsi pendaftaran
+    [
+      deskripsiOne.textContent,
+      deskripsiTwo.textContent,
+      deskripsiThree.textContent,
+    ] = [deskripsiOnebf, deskripsiTwobf, deskripsiThreebf];
+    // end deskripsi pendaftaran
+  });
 });
 // swipper init
 var swiper = new Swiper(".mySwiper", {
