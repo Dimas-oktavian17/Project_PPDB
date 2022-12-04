@@ -26,8 +26,8 @@
     <!-- Header -->
     <header class="hidden-me container" id="beranda">
         <nav class="border-gray-200 px-2 mb-10 font-header" id="nav">
-            <div
-                class="fixed container backdrop-blur-md w-[95%] z-[999] mx-auto flex flex-wrap items-center justify-between rounded-xl lg:w-[98%]">
+            <div class="fixed container backdrop-blur-md w-[95%] z-[999] mx-auto flex flex-wrap items-center justify-between rounded-xl lg:w-[98%]
+                dark:backdrop-blur-0 dark:bg-slate-800">
                 <!-- Logo -->
                 <a href="#beranda" class="flex">
                     <img src="./public/assets/logo/kawung-logo.avif" class="mr-3" width="51" height="40" alt="Logo" />
@@ -36,16 +36,7 @@
                 </a>
                 <!-- logo End -->
                 <!-- daftar btn -->
-                <div class="flex md:order-2">
-                    <div class="relative mr-3 md:mr-0 hidden md:block">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"></div>
-                        <a href="#daftar">
-                            <button type="button" onclick="onLogout()"
-                                class="font-header text-white font-semibold text-lg shadow-sm shadow-primary bg-primary hover:bg-blue-600 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:text-dark dark:bg-slate-200 dark:hover:bg-slate-300 dark:shadow-slate-200">
-                                Daftar
-                            </button>
-                        </a>
-                    </div>
+                <div class="flex md:order-1">
                     <button data-collapse-toggle="mobile-menu-3" type="button"
                         class="md:hidden group text-gray-400 hover:text-gray-900 rounded-lg inline-flex items-center justify-center"
                         aria-controls="mobile-menu-3" aria-expanded="false" id="hamburger">
@@ -81,75 +72,11 @@
                     id="mobile-menu-3">
                     <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                         <li>
-                            <a href="#beranda"
+                            <a href="index.html"
                                 class="link bg-primary font-header font-semibold text-base md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-primary md:p-0 rounded dark:bg-slate-700 dark:text-slate-50 dark:hover:text-slate-100 lg:dark:bg-transparent"
                                 aria-current="page">Beranda</a>
                         </li>
-                        <!-- nav dropdowns -->
-                        <li class="hidden lg:block">
-                            <button id="dropdownDefault" data-dropdown-toggle="dropdown" type="button"
-                                class="group link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600">
-                                Alur Pendaftaran
-                                <svg class="inline-block ml-2 w-4 h-4" id="iconDropdown" aria-label="dropdown"
-                                    aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
 
-                            <!-- Dropdown menu -->
-                            <div id="dropdown"
-                                class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
-                                data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
-                                style="
-                    position: absolute;
-                    inset: 0px auto auto 0px;
-                    margin: 0px;
-                    transform: translate3d(0px, 410px, 0px);
-                  ">
-                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefault">
-                                    <li>
-                                        <a href="#alurPendaftaran" id="btnalur"
-                                            class="dropdownbtn block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                            Alur Pendaftran
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a id="btnmajor" href="#major"
-                                            class="dropdownbtnm block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                            Program Keahlian
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a id="btndrop" href="#ekstra"
-                                            class="dropdownbtne block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                            Ekstrakurikuler
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- end dropdown -->
-                        <li class="lg:hidden">
-                            <a href="#alurPendaftaran"
-                                class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600">
-                                Alur Pendaftaran
-                            </a>
-                        </li>
-                        <li class="lg:hidden">
-                            <a href="#major"
-                                class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600">
-                                Program Keahlian
-                            </a>
-                        </li>
-                        <li class="lg:hidden">
-                            <a href="#ekstra"
-                                class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600">
-                                Ekstrakurikuler
-                            </a>
-                        </li>
                         <li>
                             <a href="#footer"
                                 class="link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600">
@@ -157,14 +84,6 @@
                             </a>
                         </li>
                         <br />
-                        <li class="lg:hidden">
-                            <a href="#daftar">
-                                <button type="button" onclick="onLogout()"
-                                    class="w-full font-header text-white font-semibold text-lg shadow-sm shadow-primary bg-primary hover:bg-blue-600 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:text-dark dark:bg-slate-200 dark:hover:bg-slate-300 dark:shadow dark:shadow-slate-200">
-                                    Daftar
-                                </button>
-                            </a>
-                        </li>
                         <!-- Darkmode -->
                         <!-- <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
               <input type="checkbox" value="" id="default-toggle" class="sr-only peer">

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // content: ["./node_modules/flowbite/dist/flowbite.js"],
   content: ["./vite-project/**/*.{html,js}"],
   darkMode: "class",
   theme: {
@@ -27,5 +28,7 @@ module.exports = {
     },
   },
 
-  plugins: [],
+  plugins: [
+    // require("flowbite/plugin")
+  ],
 };

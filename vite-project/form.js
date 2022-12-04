@@ -3,11 +3,6 @@ import "./public/src/css/style.css";
 import "flowbite";
 
 // svg active dropdown
-const icondropdown = document.querySelector('[aria-label="dropdown"]');
-const dropdown = document.getElementById("dropdownDefault");
-dropdown.addEventListener("click", () => {
-  icondropdown.classList.toggle("on");
-});
 // hamburger & active toggle
 let hamburger = document.querySelector("#hamburger");
 let menu = document.getElementById("mobile-menu-3");
@@ -40,19 +35,19 @@ document
   });
 
 // function klik dropdown
-let navdropdown = document.querySelector(".dropdownbtn");
-let navdropdownm = document.querySelector(".dropdownbtnm");
-let navdropdowne = document.querySelector(".dropdownbtne");
-let wrapperdropdown = document.getElementById("dropdown");
-navdropdown.addEventListener("click", () => {
-  wrapperdropdown.classList.toggle("hidden");
-});
-navdropdownm.addEventListener("click", () => {
-  wrapperdropdown.classList.toggle("hidden");
-});
-navdropdowne.addEventListener("click", () => {
-  wrapperdropdown.classList.toggle("hidden");
-});
+// let navdropdown = document.querySelector(".dropdownbtn");
+// let navdropdownm = document.querySelector(".dropdownbtnm");
+// let navdropdowne = document.querySelector(".dropdownbtne");
+// let wrapperdropdown = document.getElementById("dropdown");
+// navdropdown.addEventListener("click", () => {
+//   wrapperdropdown.classList.toggle("hidden");
+// });
+// navdropdownm.addEventListener("click", () => {
+//   wrapperdropdown.classList.toggle("hidden");
+// });
+// navdropdowne.addEventListener("click", () => {
+//   wrapperdropdown.classList.toggle("hidden");
+// });
 
 // Form section
 // dom section
@@ -86,10 +81,10 @@ let paginationThree = document.querySelector('[aria-label="paginationThree"]');
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   grabCursor: true,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  grabCursor: true,
-  loop: true,
+  // loop: true,
+  // loopFillGroupWithBlank: true,
+  // grabCursor: true,
+  // loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
