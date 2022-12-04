@@ -1,42 +1,22 @@
 // For Css File
 import "./public/src/css/style.css";
 import "flowbite";
-// import Swiper from "./public/src/js/swiper-bundle.min.js";
-// import "./public/src/css/animate.css";
-// import "./public/src/css/style.css";
-// import "./public/src/css/swiper-bundle.min.css";
-// For JS File
-// import "./public/src/js/swiper-bundle.min.js";
 
-// svg active dropdown
-const icondropdown = document.querySelector('[aria-label="dropdown"]');
-const dropdown = document.getElementById("dropdownDefault");
-const btnAlur = document.getElementById("btnalur");
-const btnMajor = document.getElementById("btnmajor");
-const btnEks = document.getElementById("btneks");
-dropdown.addEventListener("click", () => {
-  icondropdown.classList.toggle("on");
-  btnAlur.addEventListener("click", () => {
-    icondropdown.classList.toggle("on");
-  });
-  btnMajor.addEventListener("click", () => {
-    icondropdown.classList.toggle("on");
-  });
-  btnEks.addEventListener("click", () => {
-    icondropdown.classList.toggle("on");
-  });
+// function klik dropdown
+let wrapperdropdown = document.getElementById("dropdown");
+wrapperdropdown.addEventListener("click", () => {
+  wrapperdropdown.classList.toggle("hidden");
 });
-
 // hamburger & active toggle
 let hamburger = document.querySelector("#hamburger");
-let menu = document.getElementById("mobile-menu-3");
+let menu = document.getElementById("mobile-menu");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   menu.classList.toggle("hidden");
 });
 menu.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
   hamburger.classList.toggle("active");
+  menu.classList.toggle("hidden");
 });
 // navbar fixed
 let fixed = document.querySelector(".fixed");
@@ -292,19 +272,4 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 20,
     },
   },
-});
-
-// function klik dropdown
-let navdropdown = document.querySelector(".dropdownbtn");
-let navdropdownm = document.querySelector(".dropdownbtnm");
-let navdropdowne = document.querySelector(".dropdownbtne");
-let wrapperdropdown = document.getElementById("dropdown");
-navdropdown.addEventListener("click", () => {
-  wrapperdropdown.classList.toggle("hidden");
-});
-navdropdownm.addEventListener("click", () => {
-  wrapperdropdown.classList.toggle("hidden");
-});
-navdropdowne.addEventListener("click", () => {
-  wrapperdropdown.classList.toggle("hidden");
 });

@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/vite-project/public/assets/logo/kawung-logo.avif" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>ppdb.smkkawung1sby</title>
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="public/src/css/style.css" />
   <!-- end -->
@@ -51,34 +51,22 @@
             <span class="sr-only">Open main menu</span>
             <div class="flex flex-col items-end ">
               <p
-                class="bg-blue-600 transition duration-300 ease-in-out w-[30px] h-2 rounded-lg dark:bg-primary2 dark:active:bg-primary2hover ">
+                class="bg-blue-600 transition duration-300  ease-in-out w-[30px] h-2 rounded-lg dark:bg-primary2 dark:active:bg-primary2hover ">
               </p>
               <p
                 class="bg-blue-600 transition duration-300 ease-in-out w-4 h-2 my-1 rounded-lg  dark:bg-primary2 dark:active:bg-primary2hover">
               </p>
               <p
-                class="bg-blue-600 transition duration-300 ease-in-out w-2 h-2 rounded-lg dark:bg-primary2 dark:active:bg-primary2hover">
+                class="bg-blue-600 transition duration-300  ease-in-out w-2 h-2 rounded-lg dark:bg-primary2 dark:active:bg-primary2hover">
               </p>
             </div>
-            <svg class="w-6 h-6 hidden" id="hamburger" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <svg class="hidden w-6 h-6" id="close" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
           </button>
         </div>
         <!-- end daftar btn -->
         <!-- navbar ul -->
         <div
           class="hidden backdrop-blur-md md:backdrop-blur-0 md:flex justify-between items-center w-full md:w-auto md:order-1"
-          id="mobile-menu-3">
+          id="mobile-menu">
           <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li>
               <a href="#beranda"
@@ -87,10 +75,8 @@
             </li>
             <!-- nav dropdowns -->
             <li class="hidden lg:block">
-
               <button id="dropdownDefault" data-dropdown-toggle="dropdown" type="button"
                 class="group link font-header text-gray-700 text-base font-normal hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-primary md:p-0 dark:lg:hover:bg-transparent dark:hover:bg-slate-600 dark:text-primary2hover dark:hover:text-slate-50 dark:border-slate-600 ">
-
                 Alur Pendaftaran
                 <svg class="inline-block ml-2 w-4 h-4 " id="iconDropdown" aria-label="dropdown" aria-hidden="true"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -104,20 +90,20 @@
                 style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 410px, 0px);">
                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                   <li>
-                    <a href="#alurPendaftaran" id="btnalur"
+                    <a href="#alurPendaftaran"
                       class="dropdownbtn block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Alur
                       Pendaftran
                     </a>
                   </li>
                   <li>
-                    <a id="btnmajor" href="#major"
+                    <a href="#major"
                       class="dropdownbtnm block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Program Keahlian
                     </a>
                   </li>
                   <li>
-                    <a id="btneks" href="#ekstra"
+                    <a href="#ekstra"
                       class="dropdownbtne block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Ekstrakurikuler
                     </a>
@@ -159,16 +145,7 @@
                 </button>
               </a>
             </li>
-            <!-- Darkmode -->
-            <!-- <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
-              <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
-              <div
-                class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-              </div>
-              <span class="ml-3 text-sm font-medium text-dark dark:text-primary2hover">
-                Dark-Mode
-              </span>
-            </label> -->
+            <!-- darkmode -->
             <button aria-label="toggle" type="button"
               class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -239,10 +216,9 @@
           </figure>
         </div>
       </div>
-      <!-- Sponsor fake:v -->
+      <!-- patner Kerjsama if need bisa di isi -->
       <div class="pt-[6.25rem] scroll-mt-24" id="learn">
-
-        <div
+        <!-- <div
           class="flex flex-col justify-center items-center bg-primarySponsor rounded-[15px] mx-8 gap-[10px] lg:p-[3.75rem] lg:order-2 lg:h-[9.688rem] lg:mx-16 dark:bg-transparent dark:shadow-lg">
           <div class="flex flex-col justify-center items-center gap-10 py-8 lg:flex-row lg:w-[53.601rem] lg:h-9 ">
             <figure>
@@ -258,7 +234,7 @@
               <img src="./asset/sponsor/sponsor-4.svg" alt="sponsor" />
             </figure>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- Major -->
       <div class="flex flex-col justify-center items-center py-[6.25rem] px-0 scroll-mt-14" id="major">
@@ -601,7 +577,7 @@
           <div class="py-8 swiper mySwiper">
             <div class="flex flex-row justify-between swiper-wrapper max-w-xs md:max-w-sm lg:max-w-4xl xl:max-w-5xl">
               <!-- btn box -->
-              <button id="a" aria-label="btnswiper" type="button"
+              <button aria-label="btnswiper" type="button"
                 class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
                 <div
@@ -626,7 +602,7 @@
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button id="a" aria-label="btnswiper" type="button"
+              <button aria-label="btnswiper" type="button"
                 class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
                 <div
@@ -651,7 +627,7 @@
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button id="a" aria-label="btnswiper" type="button"
+              <button aria-label="btnswiper" type="button"
                 class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
                 <div
@@ -676,7 +652,7 @@
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button id="a" aria-label="btnswiper" type="button"
+              <button aria-label="btnswiper" type="button"
                 class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
                 <div
@@ -701,7 +677,7 @@
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button id="a" aria-label="btnswiper" type="button"
+              <button aria-label="btnswiper" type="button"
                 class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
                 <div
@@ -726,7 +702,7 @@
               </button>
               <!-- end box -->
               <!-- btn box -->
-              <button id="a" aria-label="btnswiper" type="button"
+              <button aria-label="btnswiper" type="button"
                 class="swiper-slide rounded-xl bg-white dark:bg-btnDark cursor-pointer ease-in-out transition-all duration-1000 hover:bg-primary dark:hover:bg-gray-700 group">
                 <!-- wrapper -->
                 <div
@@ -910,7 +886,7 @@
               <!-- wrapper -->
               <div class="w-full p-1 md:p-2">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./public/assets/gallery-img/guru-img/guru1.jpg">
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
               </div>
             </div>
             <!-- end box -->
@@ -918,14 +894,11 @@
           <div class="swiper-pagination pt-10"></div>
         </div>
         <!-- end swipper end -->
-        <!-- images -->
-
-        <!-- end images -->
       </div>
       <!-- end Gallery -->
       <!-- footer section -->
-      <div class="flex flex-col items-start p-20 gap-[30px] bg-footer rounded-tl-3xl rounded-tr-3xl dark:bg-slate-800"
-        id="footer">
+      <div class="flex flex-col items-start p-20 gap-[30px] bg-footer rounded-tl-3xl rounded-tr-3xl 
+      dark:bg-slate-800 scroll-mt-40" id="footer">
         <div class="flex flex-col items-start gap-[30px] lg:gap-[20px] lg:flex-row">
           <div class="flex flex-col items-start gap-5 lg:w-[27rem] lg:gap-2">
             <div class="flex flex-row items-center gap-[10px]">
@@ -937,9 +910,6 @@
             <p class="font-header font-normal text-base text-accordion order-1 dark:text-white">
               SMK Kawung 1 Surabaya merupakan sekolah dengan nilai yang tinggi, dan kualitas sdm pengajar yang baik.
               Di SMK kawung 1 Surabaya anda dapat mendapatkan relasi & teman" berguna
-            </p>
-            <p class="font-header font-semibold text-sm tracking-widest text-accordion order-2 dark:text-white">
-              COPYRIGHT (C) 2021. DESIGN BY NAUVAL
             </p>
             <p class="font-header font-semibold text-sm tracking-widest text-accordion order-2 dark:text-white">
               COPYRIGHT (C) 2022. CREATE BY DIMAS
