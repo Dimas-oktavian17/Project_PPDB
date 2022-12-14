@@ -1,6 +1,6 @@
 // For Css File
-import "./public/src/css/style.css";
-import "flowbite";
+// import "./public/src/css/style.css";
+// import "flowbite";
 
 // function klik dropdown
 let wrapperdropdown = document.getElementById("dropdown");

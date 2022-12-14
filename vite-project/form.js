@@ -1,6 +1,6 @@
 // For Css File
-import "./public/src/css/style.css";
-import "flowbite";
+// import "./public/src/css/style.css";
+// import "flowbite";
 
 // form wali
 const btnSkip = document.getElementById("btnSkip");
